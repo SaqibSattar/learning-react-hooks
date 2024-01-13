@@ -16,6 +16,7 @@ import IntervalHookCounter from "./components/IntervalHookCounter";
 import DataFetching from "./components/DataFetching";
 import ComponentC from "./components/ComponentC";
 import CounterOne from "./components/CounterOne";
+import CounterTwo from "./components/CounterTwo";
 
 export const UserContext = React.createContext();
 export const ChannelContext = React.createContext();
@@ -23,8 +24,9 @@ export const ChannelContext = React.createContext();
 function App() {
   return (
     <>
-      <CounterOne />
-      {/* <UserContext.Provider value={"Saqi"}>
+      <CounterTwo />
+      {/* <CounterOne />
+      <UserContext.Provider value={"Saqi"}>
         <ChannelContext.Provider value={"Youtube"}>
           <ComponentC />
         </ChannelContext.Provider>
