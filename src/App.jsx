@@ -21,6 +21,7 @@ import CounterThree from "./components/CounterThree";
 import ComponentAOne from "./components/ComponentAOne";
 import ComponentBOne from "./components/ComponentBOne";
 import ComponentCOne from "./components/ComponentCOne";
+import DataFetchingOne from "./components/DataFetchingOne";
 
 export const UserContext = React.createContext();
 export const ChannelContext = React.createContext();
@@ -44,13 +45,14 @@ function App() {
   const [count, dispatch] = useReducer(reducer, initialState);
   return (
     <>
-    <CountContext.Provider value={{ countState: count, countDispatch: dispatch}}>
+    <DataFetchingOne />
+    {/* <CountContext.Provider value={{ countState: count, countDispatch: dispatch}}>
     Count --- {count}
     <ComponentAOne />
     <ComponentBOne />
     <ComponentCOne />
     </CountContext.Provider>
-      {/* <CounterThree />
+      <CounterThree />
       <CounterTwo />
       <CounterOne />
       <UserContext.Provider value={"Saqi"}>
