@@ -28,6 +28,8 @@ import Counter from "./components/Counter";
 import FocusInput from "./components/FocusInput";
 import ClassTimer from "./components/ClassTimer";
 import HookTimer from "./components/HookTimer";
+import DocTitleOne from "./components/DocTitleOne";
+import DocTitleTwo from "./components/DocTitleTwo";
 
 export const UserContext = React.createContext();
 export const ChannelContext = React.createContext();
@@ -51,9 +53,11 @@ function App() {
   const [count, dispatch] = useReducer(reducer, initialState);
   return (
     <>
-    <HookTimer />
+    <DocTitleTwo />
+    <DocTitleOne />
+    {/* <HookTimer />
     <ClassTimer />
-    {/* <FocusInput />
+    <FocusInput />
     <Counter />
     <ParentComponent />
     <DataFetchingTwo />
