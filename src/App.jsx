@@ -32,6 +32,7 @@ import DocTitleOne from "./components/DocTitleOne";
 import DocTitleTwo from "./components/DocTitleTwo";
 import CountOne from "./components/CountOne";
 import CountTwo from "./components/CountTwo";
+import UserForm from "./components/UserForm";
 
 export const UserContext = React.createContext();
 export const ChannelContext = React.createContext();
@@ -55,9 +56,10 @@ function App() {
   const [count, dispatch] = useReducer(reducer, initialState);
   return (
     <>
-    <CountTwo />
+    <UserForm />
+    {/* <CountTwo />
     <CountOne />
-    {/* <DocTitleTwo />
+    <DocTitleTwo />
     <DocTitleOne />
     <HookTimer />
     <ClassTimer />
